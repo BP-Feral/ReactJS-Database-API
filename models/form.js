@@ -49,6 +49,20 @@ const formSchema = new Schema({
                 required: true
             }]
         }]
+    }],
+    sections: [{
+        title: {
+            type: String,
+            required: true
+        },
+        content: {
+            type: String,
+            required: true
+        },
+        scan_type: {
+            type: String,
+            required: true
+        }
     }]
 })
 
