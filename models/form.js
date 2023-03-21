@@ -11,45 +11,6 @@ const formSchema = new Schema({
         type: Date,
         required: true,
     },
-    /*dynamic_fields: [{
-        type: Schema.Types.ObjectId, ref: 'Dynamic Field'
-    }],
-    sections: [{
-        type: Schema.Types.ObjectId, ref: 'Section'
-    }]*/
-    dynamic_fields: [{
-        dynamic_field_name: {
-        type: String,
-        required: true
-        },
-        label: {
-            type: String,
-            required: true
-        },
-        placeholder: {
-            type: String,
-            required: true
-        },
-        mandatory: {
-            type: Boolean,
-            required: true
-        },
-        keywords: {
-            type: [String],
-            required: true
-        },
-        /*field_type: { type: Schema.Types.ObjectId, ref: 'Field Type' }*/
-        field_type: [{
-            name: {
-                type: String,
-                required: true
-            },
-            options: [{
-                type: String,
-                required: true
-            }]
-        }]
-    }],
     sections: [{
         title: {
             type: String,
@@ -62,7 +23,39 @@ const formSchema = new Schema({
         scan_type: {
             type: String,
             required: true
-        }
+        },
+        dynamic_fields: [{
+            dynamic_field_name: {
+                type: String,
+                required: true
+            },
+            label: {
+                type: String,
+                required: true
+            },
+            placeholder: {
+                type: String,
+                required: true
+            },
+            mandatory: {
+                type: Boolean,
+                required: true
+            },
+            keywords: {
+                type: [String],
+                required: true
+            },
+            field_type: {
+                name: {
+                    type: String,
+                    required: true
+                },
+                options: [{
+                    type: String,
+                    required: true
+                }]
+            }
+        }]
     }]
 })
 
