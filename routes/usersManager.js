@@ -9,7 +9,8 @@ router.get('/byEmail', getUserByEmail, (req, res) => {
 
 // functions
 async function getUserByEmail(req, res, next) {
-    const email = req.query.email;
+    const email = req.query.email
+    let user
     try {
         let user;
         if (email) {
