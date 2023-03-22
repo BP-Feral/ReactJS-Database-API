@@ -29,6 +29,14 @@ app.use('/v1/users', usersRouter)
 const formsRouter = require('./routes/forms')
 app.use('/v1/forms', formsRouter)
 
+// users manager
+const usersRouterManager = require('./routes/usersManager')
+app.use('/v1/users/get', usersRouterManager)
+
+// // forms manager
+// const formsRouterManager = require('./routes/formsManager')
+// app.use('/v1/fors/get', formsRouterManager)
+
 // home page
 app.get("/", (req, res) => {
     res.send("API is active!")
