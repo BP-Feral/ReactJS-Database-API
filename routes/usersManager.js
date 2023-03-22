@@ -3,7 +3,7 @@ const router = express.Router()
 
 // Get One by Email
 // GET http://localhost:3000/v1/users/get/byEmail
-router.get('byEmail', getUserByEmail, (req, res) => {
+router.get('/byEmail', getUserByEmail, (req, res) => {
     res.send(res.user)
 })
 
