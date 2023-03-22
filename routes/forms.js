@@ -26,8 +26,8 @@ router.post('/', async (req, res) => {
         {
             title: req.body.title,
             retention_date: req.body.retention_date,
-            // dynamic_fields: req.body.dynamic_fields,
             sections: req.body.sections
+            // dynamic_fields: req.body.dynamic_fields,
         }
     )
 
