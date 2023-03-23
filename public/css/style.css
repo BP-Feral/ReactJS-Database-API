@@ -245,7 +245,7 @@
     width: 60px;
     height: 26px;
     padding-top: 5px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     color: white;
     text-align: center;
@@ -253,10 +253,28 @@
     position: absolute;
 }
 
+.info2 {
+    width: 110px;
+    height: 26px;
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    background-color: #0d0d0e;
+    position: absolute;
+}
+
 .middletext {
     padding-top: 5px;
     position: absolute;
     margin-left: 70px;
+}
+
+.middletext2 {
+    padding-top: 5px;
+    position: absolute;
+    margin-left: 120px;
 }
 
 .infotext {
@@ -287,5 +305,10 @@ td, th {
 }
 
 .weight {
+    font-weight: 700;
+}
+
+h5 {
+    line-height: 0px;
     font-weight: 700;
 }

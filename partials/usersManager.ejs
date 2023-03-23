@@ -12,10 +12,10 @@
                             GET
                         </div>
                         <div class="middletext">
-                            api-user-forms.herokuapp.com/v1/forms
+                            api-user-forms.herokuapp.com/v1/users/get/byEmail
                         </div>
                         <div class="infotext">
-                            get all forms
+                            get user by Email
                         </div>
                     </a>
                     <a href="#show1" class="show" id="show1">
@@ -23,19 +23,19 @@
                             GET
                         </div>
                         <div class="middletext">
-                            api-user-forms.herokuapp.com/v1/forms
+                            api-user-forms.herokuapp.com/v1/users/get/byEmail
                         </div>
                         <div class="infotext">
-                            get all forms
+                            get user by Email
                         </div>
                     </a>
                         <!-- CONTENT -->
                         <div class="list">
                             
                             <p class="weight">RESPONSE CLASSES</p>
-                            <p class="weight">Return value: [form]</p>
+                            <p class="weight">Return value: [User]</p>
 
-                            <h5 class="weight">form - This object contains form information.</h5>
+                            <h5 class="weight">User - This object contains user information.</h5>
                             <table>
                                 <tr class="table-title">
                                     <th>NAME</th>
@@ -43,19 +43,29 @@
                                     <th>DESCRIPTION</th>
                                 </tr>
                                 <tr>
-                                    <th>title</th>
-                                    <th>string</th>
-                                    <th>Title of the form</th>
+                                    <td>name</td>
+                                    <td>string</td>
+                                    <td>Name of the user</td>
                                 </tr>
                                 <tr>
-                                    <th>retention_date</th>
-                                    <th>date</th>
-                                    <th>Date of creation, defaults to time.now</th>
+                                    <td>password</td>
+                                    <td>string</td>
+                                    <td>Password of the user</td>
                                 </tr>
                                 <tr>
-                                    <th>sections</th>
-                                    <th>[section]</th>
-                                    <th>List of section objects</th>
+                                    <td>email</td>
+                                    <td>string</td>
+                                    <td>Email of the user</td>
+                                </tr>
+                                <tr>
+                                    <td>address</td>
+                                    <td>string</td>
+                                    <td>Address of the user</td>
+                                </tr>
+                                <tr>
+                                    <td>fiscal_code</td>
+                                    <td>string</td>
+                                    <td>Fiscal code of the user</td>
                                 </tr>
                                 <tr>
                                     <td>_id</td>
@@ -77,10 +87,10 @@
                             GET
                         </div>
                         <div class="middletext">
-                            api-user-forms.herokuapp.com/v1/forms/:id
+                            api-user-forms.herokuapp.com/v1/users/get/byName
                         </div>
                         <div class="infotext">
-                            get form by ID
+                            get user by Name
                         </div>
                     </a>
                     <a href="#show2" class="show" id="show2">
@@ -88,19 +98,19 @@
                             GET
                         </div>
                         <div class="middletext">
-                            api-user-forms.herokuapp.com/v1/forms/:id
+                            api-user-forms.herokuapp.com/v1/users/get/byName
                         </div>
                         <div class="infotext">
-                            get form by ID
+                            get user by Name
                         </div>
                     </a>
                         <!-- CONTENT -->
                         <div class="list">
                             
                             <p class="weight">RESPONSE CLASSES</p>
-                            <p class="weight">Return value: form</p>
+                            <p class="weight">Return value: User</p>
 
-                            <h5>form - This object contains form information.</h5>
+                            <h5>User - This object contains user information.</h5>
                             <table>
                                 <tr class="table-title">
                                     <th>NAME</th>
@@ -108,19 +118,29 @@
                                     <th>DESCRIPTION</th>
                                 </tr>
                                 <tr>
-                                    <th>title</th>
-                                    <th>string</th>
-                                    <th>Title of the form</th>
+                                    <td>name</td>
+                                    <td>string</td>
+                                    <td>Name of the user</td>
                                 </tr>
                                 <tr>
-                                    <th>retention_date</th>
-                                    <th>date</th>
-                                    <th>Date of creation, defaults to time.now</th>
+                                    <td>password</td>
+                                    <td>string</td>
+                                    <td>Password of the user</td>
                                 </tr>
                                 <tr>
-                                    <th>sections</th>
-                                    <th>[section]</th>
-                                    <th>List of section objects</th>
+                                    <td>email</td>
+                                    <td>string</td>
+                                    <td>Email of the user</td>
+                                </tr>
+                                <tr>
+                                    <td>address</td>
+                                    <td>string</td>
+                                    <td>Address of the user</td>
+                                </tr>
+                                <tr>
+                                    <td>fiscal_code</td>
+                                    <td>string</td>
+                                    <td>Fiscal code of the user</td>
                                 </tr>
                                 <tr>
                                     <td>_id</td>
@@ -139,33 +159,33 @@
                 <div class="route">
                     <a href="#hide3" class="hide" id="hide3">
                         <div class="info">
-                            POST
+                            GET
                         </div>
                         <div class="middletext">
-                            api-user-forms.herokuapp.com/v1/forms/
+                            api-user-forms.herokuapp.com/v1/users/get/byAddress
                         </div>
                         <div class="infotext">
-                            add a form to database
+                            get a user by Address
                         </div>
                     </a>
                     <a href="#show3" class="show" id="show3">
                         <div class="info">
-                            POST
+                            GET
                         </div>
                         <div class="middletext">
-                            api-user-forms.herokuapp.com/v1/forms/
+                            api-user-forms.herokuapp.com/v1/users/get/byAddress
                         </div>
                         <div class="infotext">
-                            add a form to database
+                            get a user by Address
                         </div>
                     </a>
                         <!-- CONTENT -->
                         <div class="list">
                             
                             <p class="weight">RESPONSE CLASSES</p>
-                            <p class="weight">Return value: form</p>
+                            <p class="weight">Return value: User</p>
 
-                            <h5>form - This object contains form information.</h5>
+                            <h5>User - This object contains user information.</h5>
                             <table>
                                 <tr class="table-title">
                                     <th>NAME</th>
@@ -173,149 +193,40 @@
                                     <th>DESCRIPTION</th>
                                 </tr>
                                 <tr>
-                                    <th>title</th>
-                                    <th>string</th>
-                                    <th>Title of the form</th>
+                                    <td>name</td>
+                                    <td>string</td>
+                                    <td>Name of the user</td>
                                 </tr>
                                 <tr>
-                                    <th>retention_date</th>
-                                    <th>date</th>
-                                    <th>Date of creation, defaults to time.now</th>
+                                    <td>password</td>
+                                    <td>string</td>
+                                    <td>Password of the user</td>
                                 </tr>
                                 <tr>
-                                    <th>sections</th>
-                                    <th>[section]</th>
-                                    <th>List of section objects</th>
+                                    <td>email</td>
+                                    <td>string</td>
+                                    <td>Email of the user</td>
+                                </tr>
+                                <tr>
+                                    <td>address</td>
+                                    <td>string</td>
+                                    <td>Address of the user</td>
+                                </tr>
+                                <tr>
+                                    <td>fiscal_code</td>
+                                    <td>string</td>
+                                    <td>Fiscal code of the user</td>
                                 </tr>
                                 <tr>
                                     <td>_id</td>
                                     <td>string</td>
                                     <td>unique ID auto generated</td>
                                 </tr>
+                                <tr>
                                     <td>__v</td>
                                     <td>number</td>
                                     <td>version number, defaults to 0</td>
-                                <tr>
-                            </table>
-                        </div>
-                </div>
-
-                <!-- START TEMPLATE -->
-                <div class="route">
-                    <a href="#hide4" class="hide" id="hide4">
-                        <div class="info">
-                            PATCH
-                        </div>
-                        <div class="middletext">
-                            api-user-forms.herokuapp.com/v1/forms/:id
-                        </div>
-                        <div class="infotext">
-                            change a form's data
-                        </div>
-                    </a>
-                    <a href="#show4" class="show" id="show4">
-                        <div class="info">
-                            PATCH
-                        </div>
-                        <div class="middletext">
-                            api-user-forms.herokuapp.com/v1/forms/:id
-                        </div>
-                        <div class="infotext">
-                            change a form's data
-                        </div>
-                    </a>
-                        <!-- CONTENT -->
-                        <div class="list">
-                            
-                            <p class="weight">RESPONSE CLASSES</p>
-                            <p class="weight">Return value: form</p>
-
-                            <h5 class="weight">form - This object contains form information.</h5>
-                            <table>
-                                <tr class="table-title">
-                                    <th>NAME</th>
-                                    <th>DATA TYPE</th>
-                                    <th>DESCRIPTION</th>
                                 </tr>
-                                <tr>
-                                    <th>title</th>
-                                    <th>string</th>
-                                    <th>Title of the form</th>
-                                </tr>
-                                <tr>
-                                    <th>retention_date</th>
-                                    <th>date</th>
-                                    <th>Date of creation, defaults to time.now</th>
-                                </tr>
-                                <tr>
-                                    <th>sections</th>
-                                    <th>[section]</th>
-                                    <th>List of section objects</th>
-                                </tr>
-                                <tr>
-                                    <td>_id</td>
-                                    <td>string</td>
-                                    <td>unique ID auto generated</td>
-                                </tr>
-                                    <td>__v</td>
-                                    <td>number</td>
-                                    <td>version number, defaults to 0</td>
-                                <tr>
-                            </table>
-                        </div>
-                </div>
-
-                <!-- START TEMPLATE -->
-                <div class="route">
-                    <a href="#hide5" class="hide" id="hide5">
-                        <div class="info">
-                            DELETE
-                        </div>
-                        <div class="middletext">
-                            api-user-forms.herokuapp.com/v1/forms/:id
-                        </div>
-                        <div class="infotext">
-                            delete a form by ID
-                        </div>
-                    </a>
-                    <a href="#show5" class="show" id="show5">
-                        <div class="info">
-                            DELETE
-                        </div>
-                        <div class="middletext">
-                            api-user-forms.herokuapp.com/v1/forms/:id
-                        </div>
-                        <div class="infotext">
-                            delete a form by ID
-                        </div>
-                    </a>
-                        <!-- CONTENT -->
-                        <div class="list">
-                            
-                            <p class="weight">RESPONSE CLASSES</p>
-                            <p class="weight">Return value: Object</p>
-
-                            <h5 class="weight">Object - This object contains a message string.</h5>
-                            <table>
-                                <tr class="table-title">
-                                    <th>NAME</th>
-                                    <th>DATA TYPE</th>
-                                    <th>DESCRIPTION</th>
-                                </tr>
-                                <tr>
-                                    <td>message</td>
-                                    <td>string</td>
-                                    <td>removal status</td>
-                                </tr>
-                                <tr>
-                                    <td>_id</td>
-                                    <td>string</td>
-                                    <td>unique ID auto generated</td>
-                                </tr>
-                                    <td>__v</td>
-                                    <td>number</td>
-                                    <td>version number, defaults to 0</td>
-                                <tr>
                             </table>
                         </div>
                 </div>

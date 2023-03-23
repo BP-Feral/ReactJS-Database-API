@@ -18,15 +18,24 @@
     <div class="button-list">
         <button class="button" id="home-button">
             <div>HOME</div>
-            <div><span class="small-text">Get started with the API here</span></div>
+            <div>
+                <span class="small-text">Get started with the API here</span></div>
         </button>
         <button class="button" id="users-button">
             <div>USERS</div>
-            <div><span class="small-text">localhost:3000/v1/users</span></div>
+            <div><span class="small-text">api-user-forms.herokuapp.com/v1/users</span></div>
         </button>
         <button class="button" id="forms-button">
             <div>FORMS</div>
-            <div><span class="small-text">localhost:3000/v1/forms</span></div>
+            <div><span class="small-text">api-user-forms.herokuapp.com/v1/forms</span></div>
+        </button>
+        <button class="button" id="users-manager-button">
+            <div>USERS MANAGER</div>
+            <div><span class="small-text">api-user-forms.herokuapp.com/v1/users/get</span></div>
+        </button>
+        <button class="button" id="forms-manager-button">
+            <div>FORMS MANAGER</div>
+            <div><span class="small-text">api-user-forms.herokuapp.com/v1/forms/get</span></div>
         </button>
     </div>
 
@@ -62,6 +71,8 @@
         const homeButton = document.getElementById("home-button");
         const usersButton = document.getElementById("users-button");
         const formsButton = document.getElementById("forms-button");
+        const usersManagerButton = document.getElementById("users-manager-button");
+        const formsManagerButton = document.getElementById("forms-manager-button");
 
         const content = document.getElementById("content");
         homeButton.classList.add("selected");
@@ -70,7 +81,8 @@
             homeButton.classList.remove("selected");
             usersButton.classList.remove("selected");
             formsButton.classList.remove("selected");
-            
+            usersManagerButton.classList.remove("selected");
+            formsManagerButton.classList.remove("selected");
             button.classList.add("selected");
         }
 
@@ -93,6 +105,20 @@
             <%- include('../partials/forms'); %>
             `;
             selectButton(formsButton);
+        });
+
+        usersManagerButton.addEventListener("click", () => {
+            content.innerHTML = `
+            <%- include('../partials/usersManager'); %>
+            `;
+            selectButton(usersManagerButton);
+        });
+
+        formsManagerButton.addEventListener("click", () => {
+            content.innerHTML = `
+            <%- include('../partials/formsManager'); %>
+            `;
+            selectButton(formsManagerButton);
         });
 
     </script>

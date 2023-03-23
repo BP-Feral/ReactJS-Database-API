@@ -12,7 +12,7 @@
                             GET
                         </div>
                         <div class="middletext">
-                            api-user-forms.herokuapp.com/users
+                            api-user-forms.herokuapp.com/v1/users
                         </div>
                         <div class="infotext">
                             get all users
@@ -23,7 +23,7 @@
                             GET
                         </div>
                         <div class="middletext">
-                            api-user-forms.herokuapp.com/users
+                            api-user-forms.herokuapp.com/v1/users
                         </div>
                         <div class="infotext">
                             get all users
@@ -35,48 +35,50 @@
                             <p class="weight">RESPONSE CLASSES</p>
                             <p class="weight">Return value: [User]</p>
 
-                            <h5>User</h5>
+                            <h5 class="weight">User - This object contains user information.</h5>
                             <table>
                                 <tr class="table-title">
                                     <th>NAME</th>
                                     <th>DATA TYPE</th>
-                                    <th>REQUIRED</th>
                                     <th>DESCRIPTION</th>
                                 </tr>
                                 <tr>
                                     <td>name</td>
                                     <td>string</td>
-                                    <td>required</td>
                                     <td>Name of the user</td>
                                 </tr>
                                 <tr>
                                     <td>password</td>
                                     <td>string</td>
-                                    <td>required</td>
                                     <td>Password of the user</td>
                                 </tr>
                                 <tr>
                                     <td>email</td>
                                     <td>string</td>
-                                    <td>required</td>
                                     <td>Email of the user</td>
                                 </tr>
                                 <tr>
                                     <td>address</td>
                                     <td>string</td>
-                                    <td>required</td>
                                     <td>Address of the user</td>
                                 </tr>
                                 <tr>
                                     <td>fiscal_code</td>
                                     <td>string</td>
-                                    <td>optional</td>
                                     <td>Fiscal code of the user</td>
                                 </tr>
+                                <tr>
+                                    <td>_id</td>
+                                    <td>string</td>
+                                    <td>unique ID auto generated</td>
+                                </tr>
+                                    <td>__v</td>
+                                    <td>number</td>
+                                    <td>version number, defaults to 0</td>
+                                <tr>
                             </table>
                         </div>
                 </div>
-                <!-- END TEMPLATE -->
 
                 <!-- START TEMPLATE -->
                 <div class="route">
@@ -85,7 +87,7 @@
                             GET
                         </div>
                         <div class="middletext">
-                            api-user-forms.herokuapp.com/users/:id
+                            api-user-forms.herokuapp.com/v1/users/:id
                         </div>
                         <div class="infotext">
                             get user by ID
@@ -96,7 +98,7 @@
                             GET
                         </div>
                         <div class="middletext">
-                            api-user-forms.herokuapp.com/users/:id
+                            api-user-forms.herokuapp.com/v1/users/:id
                         </div>
                         <div class="infotext">
                             get user by ID
@@ -108,48 +110,50 @@
                             <p class="weight">RESPONSE CLASSES</p>
                             <p class="weight">Return value: User</p>
 
-                            <h5>User</h5>
+                            <h5>User - This object contains user information.</h5>
                             <table>
                                 <tr class="table-title">
                                     <th>NAME</th>
                                     <th>DATA TYPE</th>
-                                    <th>REQUIRED</th>
                                     <th>DESCRIPTION</th>
                                 </tr>
                                 <tr>
                                     <td>name</td>
                                     <td>string</td>
-                                    <td>required</td>
                                     <td>Name of the user</td>
                                 </tr>
                                 <tr>
                                     <td>password</td>
                                     <td>string</td>
-                                    <td>required</td>
                                     <td>Password of the user</td>
                                 </tr>
                                 <tr>
                                     <td>email</td>
                                     <td>string</td>
-                                    <td>required</td>
                                     <td>Email of the user</td>
                                 </tr>
                                 <tr>
                                     <td>address</td>
                                     <td>string</td>
-                                    <td>required</td>
                                     <td>Address of the user</td>
                                 </tr>
                                 <tr>
                                     <td>fiscal_code</td>
                                     <td>string</td>
-                                    <td>optional</td>
                                     <td>Fiscal code of the user</td>
                                 </tr>
+                                <tr>
+                                    <td>_id</td>
+                                    <td>string</td>
+                                    <td>unique ID auto generated</td>
+                                </tr>
+                                    <td>__v</td>
+                                    <td>number</td>
+                                    <td>version number, defaults to 0</td>
+                                <tr>
                             </table>
                         </div>
                 </div>
-                <!-- END TEMPLATE -->
 
                 <!-- START TEMPLATE -->
                 <div class="route">
@@ -158,7 +162,7 @@
                             POST
                         </div>
                         <div class="middletext">
-                            api-user-forms.herokuapp.com/users/
+                            api-user-forms.herokuapp.com/v1/users/
                         </div>
                         <div class="infotext">
                             add a user to database
@@ -169,7 +173,7 @@
                             POST
                         </div>
                         <div class="middletext">
-                            api-user-forms.herokuapp.com/users/
+                            api-user-forms.herokuapp.com/v1/users/
                         </div>
                         <div class="infotext">
                             add a user to database
@@ -181,48 +185,251 @@
                             <p class="weight">RESPONSE CLASSES</p>
                             <p class="weight">Return value: User</p>
 
-                            <h5>User</h5>
+                            <h5>User - This object contains user information.</h5>
                             <table>
                                 <tr class="table-title">
                                     <th>NAME</th>
                                     <th>DATA TYPE</th>
-                                    <th>REQUIRED</th>
                                     <th>DESCRIPTION</th>
                                 </tr>
                                 <tr>
                                     <td>name</td>
                                     <td>string</td>
-                                    <td>required</td>
                                     <td>Name of the user</td>
                                 </tr>
                                 <tr>
                                     <td>password</td>
                                     <td>string</td>
-                                    <td>required</td>
                                     <td>Password of the user</td>
                                 </tr>
                                 <tr>
                                     <td>email</td>
                                     <td>string</td>
-                                    <td>required</td>
                                     <td>Email of the user</td>
                                 </tr>
                                 <tr>
                                     <td>address</td>
                                     <td>string</td>
-                                    <td>required</td>
                                     <td>Address of the user</td>
                                 </tr>
                                 <tr>
                                     <td>fiscal_code</td>
                                     <td>string</td>
-                                    <td>optional</td>
                                     <td>Fiscal code of the user</td>
+                                </tr>
+                                <tr>
+                                    <td>_id</td>
+                                    <td>string</td>
+                                    <td>unique ID auto generated</td>
+                                </tr>
+                                <tr>
+                                    <td>__v</td>
+                                    <td>number</td>
+                                    <td>version number, defaults to 0</td>
                                 </tr>
                             </table>
                         </div>
                 </div>
-                <!-- END TEMPLATE -->
+
+                <!-- START TEMPLATE -->
+                <div class="route">
+                    <a href="#hide4" class="hide" id="hide4">
+                        <div class="info">
+                            PATCH
+                        </div>
+                        <div class="middletext">
+                            api-user-forms.herokuapp.com/v1/users/:id
+                        </div>
+                        <div class="infotext">
+                            change a user's data
+                        </div>
+                    </a>
+                    <a href="#show4" class="show" id="show4">
+                        <div class="info">
+                            PATCH
+                        </div>
+                        <div class="middletext">
+                            api-user-forms.herokuapp.com/v1/users/:id
+                        </div>
+                        <div class="infotext">
+                            change a user's data
+                        </div>
+                    </a>
+                        <!-- CONTENT -->
+                        <div class="list">
+                            
+                            <p class="weight">RESPONSE CLASSES</p>
+                            <p class="weight">Return value: User</p>
+
+                            <h5 class="weight">User - This object contains user information.</h5>
+                            <table>
+                                <tr class="table-title">
+                                    <th>NAME</th>
+                                    <th>DATA TYPE</th>
+                                    <th>DESCRIPTION</th>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>string</td>
+                                    <td>Name of the user</td>
+                                </tr>
+                                <tr>
+                                    <td>password</td>
+                                    <td>string</td>
+                                    <td>Password of the user</td>
+                                </tr>
+                                <tr>
+                                    <td>email</td>
+                                    <td>string</td>
+                                    <td>Email of the user</td>
+                                </tr>
+                                <tr>
+                                    <td>address</td>
+                                    <td>string</td>
+                                    <td>Address of the user</td>
+                                </tr>
+                                <tr>
+                                    <td>fiscal_code</td>
+                                    <td>string</td>
+                                    <td>Fiscal code of the user</td>
+                                </tr>
+                                <tr>
+                                    <td>_id</td>
+                                    <td>string</td>
+                                    <td>unique ID auto generated</td>
+                                </tr>
+                                    <td>__v</td>
+                                    <td>number</td>
+                                    <td>version number, defaults to 0</td>
+                                <tr>
+                            </table>
+                        </div>
+                </div>
+
+                <!-- START TEMPLATE -->
+                <div class="route">
+                    <a href="#hide5" class="hide" id="hide5">
+                        <div class="info">
+                            DELETE
+                        </div>
+                        <div class="middletext">
+                            api-user-forms.herokuapp.com/v1/users/:id
+                        </div>
+                        <div class="infotext">
+                            delete a user by ID
+                        </div>
+                    </a>
+                    <a href="#show5" class="show" id="show5">
+                        <div class="info">
+                            DELETE
+                        </div>
+                        <div class="middletext">
+                            api-user-forms.herokuapp.com/v1/users/:id
+                        </div>
+                        <div class="infotext">
+                            delete a user by ID
+                        </div>
+                    </a>
+                        <!-- CONTENT -->
+                        <div class="list">
+                            
+                            <p class="weight">RESPONSE CLASSES</p>
+                            <p class="weight">Return value: Object</p>
+
+                            <h5 class="weight">Object - This object contains a message string.</h5>
+                            <table>
+                                <tr class="table-title">
+                                    <th>NAME</th>
+                                    <th>DATA TYPE</th>
+                                    <th>DESCRIPTION</th>
+                                </tr>
+                                <tr>
+                                    <td>message</td>
+                                    <td>string</td>
+                                    <td>removal status</td>
+                                </tr>
+                            </table>
+                        </div>
+                </div>
+
+                <!-- START TEMPLATE -->
+                <div class="route">
+                    <a href="#hide6" class="hide" id="hide6">
+                        <div class="info2">
+                            RESPONSES
+                        </div>
+                        <div class="middletext2">
+                            table of contents
+                        </div>
+                        <div class="infotext">
+                            information about responses
+                        </div>
+                    </a>
+                    <a href="#show6" class="show" id="show6">
+                        <div class="info2">
+                            RESPONSES
+                        </div>
+                        <div class="middletext2">
+                            table of contents
+                        </div>
+                        <div class="infotext">
+                            information about responses
+                        </div>
+                    </a>
+                    <!-- CONTENT -->
+                    <div class="list">
+                        
+                        <p class="weight">RESPONSE ERRORS</p>
+                        <table>
+                            <tr class="table-title">
+                                <th>HTTP STATUS CODE</th>
+                                <th>REASON</th>
+                            </tr>
+                            <tr>
+                                <td>400</td>
+                                <td>Bad request</td>
+                            </tr>
+                            <tr>
+                                <td>401</td>
+                                <td>Unauthorized</td>   
+                            </tr>
+                            <tr>
+                                <td>403</td>
+                                <td>Forbidden</td>
+                            </tr>
+                                <td>404</td>
+                                <td>Data not found</td>
+                            <tr>
+                                <td>405</td>
+                                <td>Method not allowed</td>
+                            </tr>
+                            <tr>
+                                <td>415</td>
+                                <td>Unsupported media type</td>
+                            </tr>
+                            <tr>
+                                <td>429</td>
+                                <td>Rate limit exceeded</td>
+                            </tr>
+                            <tr>
+                                <td>500</td>
+                                <td>Internal server error</td>
+                            </tr>
+                            <tr>
+                                <td>502</td>
+                                <td>Bad gateway</td>
+                            </tr>
+                            <tr>
+                                <td>503</td>
+                                <td>Service unavailable</td>
+                            </tr>
+                            <tr>
+                                <td>504</td>
+                                <td>Gateway timeout</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
