@@ -31,19 +31,38 @@
     </div>
 
     <div class="button-line">
-        <button class="custom-button">View on Github</button>
-        <button class="custom-button">Contact Discord</button>
+        
+        <a href="https://github.com/pricob/ReactJS-Database-API" target="_blank"><button class="custom-button">
+            <span>
+                <img class="github" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F178-1787243_github-icon-png.png&f=1&nofb=1&ipt=69c77b3a5fb99a3e58efc863e004f977714d4a86800feb76fcbd5b9fb7e81eec&ipo=images">
+            </span>
+            <span class="github-text">
+                View on Github
+            </span>
+        </button></a>
+        
+        <a href="https://discord.gg/xcEYBpn2k2" target="_blank"><button class="custom-button">
+            <span>
+                <img class="discord" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodownload.org%2Fwp-content%2Fuploads%2F2017%2F11%2Fdiscord-logo-1.png&f=1&nofb=1&ipt=0c3aed079ee07a2fa1a54ecd8d7f9c4bed3dda94b539fca7ac5088e69d9e1e32&ipo=images">
+            </span>
+            <span class="discord-text">
+
+            </span>
+                Contact Discord
+            </span>
+        </button></a>
+
     </div>
-    
+
     <div class="content" id="content">
-        <p>Home Content</p>
-        <p>Next line here wow</p>
+        <%- include('../partials/home.ejs'); %>
     </div>
 
     <script>
         const homeButton = document.getElementById("home-button");
         const usersButton = document.getElementById("users-button");
         const formsButton = document.getElementById("forms-button");
+
         const content = document.getElementById("content");
         homeButton.classList.add("selected");
 
@@ -51,34 +70,32 @@
             homeButton.classList.remove("selected");
             usersButton.classList.remove("selected");
             formsButton.classList.remove("selected");
-
+            
             button.classList.add("selected");
         }
 
         homeButton.addEventListener("click", () => {
             content.innerHTML = `
-            <p>Home Content</p>
-            <p>Next line here wow</p>
+            <%- include('../partials/home'); %>
             `;
             selectButton(homeButton);
         });
 
         usersButton.addEventListener("click", () => {
             content.innerHTML = `
-            <p>Users Content</p>
-            <p>Next line here wow</p>
+            <%- include('../partials/users'); %>
             `;
             selectButton(usersButton);
         });
 
         formsButton.addEventListener("click", () => {
             content.innerHTML = `
-            <p>Forms Content</p>
-            <p>Next line here wow</p>
+            <%- include('../partials/forms'); %>
             `;
             selectButton(formsButton);
         });
-	</script>
+
+    </script>
 
 </body>
 </html>
