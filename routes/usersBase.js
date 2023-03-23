@@ -19,6 +19,12 @@ router.get('/:id', getUser, (req, res) => {
     res.send(res.user)
 })
 
+// Verify User
+// POST http://localhost:3000/v1/users/verify
+router.post('/verify', verifyuser, (req, res) => {
+    res.send(res.user)
+})
+
 // Creating one
 // POST http://localhost:3000/v1/users/
 router.post('/', async (req, res) => {
@@ -75,6 +81,7 @@ router.delete('/:id', getUser, async (req, res) => {
     }
 })
 
+// middleware functions
 async function getUser(req, res, next) {
     let user
     try {
@@ -88,6 +95,34 @@ async function getUser(req, res, next) {
 
     res.user = user
     next()
+}
+
+async function verifyuser(req, res, next) {
+    if( (req.body.email != null) && (req.body.password != null) ) {
+        const email = req.body.email
+        const password = req.body.password
+        
+        let user
+        
+        try {
+            user = await User.findOne({ email: email, password: password }).exec();
+            if (!user) {
+                return res.status(404).json({ message: 'false' })
+            }
+        } catch (err) {
+            return res.status(505).json({ message: err.message })
+        }
+
+        return res.status(200).json({ message: 'true' })
+        next()
+    } else {
+        if (req.body.email == null) {
+            return res.status(400).json({ message: 'you must provide an email' })
+        }        
+        if (req.body.password == null) {
+            return res.status(400).json({ message: 'you must provide an password' })
+        }
+    }
 }
 
 module.exports = router

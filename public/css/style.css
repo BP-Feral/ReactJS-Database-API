@@ -35,6 +35,39 @@
     justify-content: center;
 }
 
+.button-line {
+    position: fixed;
+    bottom: 0;
+    height: 35px;
+    display: inline;
+    align-items: center;
+}
+
+.custom-button {
+    width: 135px;
+    height: 28px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    line-height: 16px;
+    margin-left: 2px;
+    margin-right: 3px;
+    border-color: rgba(205,217,229,.1);
+    background-image: linear-gradient(180deg, #373e47, #30363d 90%);
+    border-radius: .25em;
+    cursor: pointer;
+    border: 1px;
+    color: #adbac7;
+    text-align: left;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+}
+
+.custom-button:hover {
+    border-color: rgba(236, 238, 240, 0.767);
+    background-image: linear-gradient(180deg, #444c55, #606972 90%);
+    border: 1px;
+    text-align: left;
+}
+
 .small-text {
     font-size: 12px;
     margin-top: 5px;
