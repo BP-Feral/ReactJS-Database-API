@@ -1,15 +1,20 @@
-### Endpoints
->` https://api-user-forms.herokuapp.com/v1/users/`
+[ ! ] THE DOCUMENTATION BELOW IS DEPRECATED [ ! ]
 
->` https://api-user-forms.herokuapp.com/v1/users/<id>`
+[ ! ] YOU CAN FIND THE UPDATED ONE [HERE](https://api-user-forms.herokuapp.com/) [ ! ]
 
->` https://api-user-forms.herokuapp.com/v1/forms/`
 
->` https://api-user-forms.herokuapp.com/v1/forms/<id>`
+### ~~Endpoints~~
+>~~` https://api-user-forms.herokuapp.com/v1/users/`~~
+
+>~~` https://api-user-forms.herokuapp.com/v1/users/<id>`~~
+
+>~~` https://api-user-forms.herokuapp.com/v1/forms/`~~
+
+>~~` https://api-user-forms.herokuapp.com/v1/forms/<id>`~~
 ---
-### User Methods 
+### ~~User Methods~~
 
-`POST https://api-user-forms.herokuapp.com/v1/users/`
+~~`POST https://api-user-forms.herokuapp.com/v1/users/`~~
 > ###### takes a user object and insert it into the database
 > ###### this is the structure of the json object
 ```json
@@ -23,7 +28,7 @@
 }
 ```
 ---
-`GET https://api-user-forms.herokuapp.com/v1/users/`
+~~`GET https://api-user-forms.herokuapp.com/v1/users/`~~
 > ###### returns a complete list of all users objects from the database
  - empty list example:  
  ```json
@@ -65,7 +70,7 @@
 ]
 ```
 ---
-`GET https://api-user-forms.herokuapp.com/v1/users/<id>`
+~~`GET https://api-user-forms.herokuapp.com/v1/users/<id>`~~
 > ###### replace `<id>` with the user id and it will return all of the user's data
 
 - example `GET https://api-user-forms.herokuapp.com/v1/users/64046952d2cc374748b0fb29` returns:
@@ -83,7 +88,7 @@
 }
 ```
 ---
-`PATCH https://api-user-forms.herokuapp.com/v1/users/<id>`
+~~`PATCH https://api-user-forms.herokuapp.com/v1/users/<id>`~~
 > ##### update a user's data, you only need to type the fields you want to update
 - example `PATCH https://api-user-forms.herokuapp.com/v1/users/64046952d2cc374748b0fb29`:
 ```json
@@ -95,7 +100,7 @@
 ```
 > ##### This will change the password and email with the new fields
 
-`GET https://api-user-forms.herokuapp.com/v1/users/64046952d2cc374748b0fb29`:
+~~`GET https://api-user-forms.herokuapp.com/v1/users/64046952d2cc374748b0fb29`:~~
 ```json
 //json response
 {
@@ -109,13 +114,13 @@
 }
 ```
 ---
-`DELETE https://api-user-forms.herokuapp.com/v1/users/<id>`
+~~`DELETE https://api-user-forms.herokuapp.com/v1/users/<id>`~~
 
 > ##### remove a user completely from database
 
 - example `DELETE https://api-user-forms.herokuapp.com/v1/users/64046940d2cc374748b0fb27`:
 > ##### this will remove the user with id `64046940d2cc374748b0fb27` in our case Mihai
-`GET https://api-user-forms.herokuapp.com/v1/users/` will return this now:
+~~`GET https://api-user-forms.herokuapp.com/v1/users/` will return this now:~~
 ```json
 //json response
 [
@@ -141,9 +146,9 @@
 ```
 
 ---
-### Forms Methods 
+### ~~Forms Methods~~
 
-`POST https://api-user-forms.herokuapp.com/v1/forms/`
+~~`POST https://api-user-forms.herokuapp.com/v1/forms/`~~
 > ###### takes a form object and insert it into the database
 > ###### this is the structure of the json object
 ```json
@@ -171,7 +176,7 @@
 }
 ```
 ---
-`GET https://api-user-forms.herokuapp.com/v1/forms/`
+~~`GET https://api-user-forms.herokuapp.com/v1/forms/`~~
 > ###### returns a complete list of all forms objects from the database
  - empty list example:  
  ```json
@@ -217,7 +222,7 @@
 ]
 ```
 ---
-`GET https://api-user-forms.herokuapp.com/v1/forms/<id>`
+~~`GET https://api-user-forms.herokuapp.com/v1/forms/<id>`~~
 > ###### replace `<id>` with the form id and it will return all of the form's data
 
 - example `GET https://api-user-forms.herokuapp.com/v1/forms/6411da8bcfe3dbcddf3c8b20` returns:
@@ -256,7 +261,7 @@
 }
 ```
 ---
-`PATCH https://api-user-forms.herokuapp.com/v1/forms/<id>`
+~~`PATCH https://api-user-forms.herokuapp.com/v1/forms/<id>`~~
 > ##### update a forms's data, you only need to type the fields you want to update
 - example `PATCH https://api-user-forms.herokuapp.com/v1/forms/6411da8bcfe3dbcddf3c8b20`:
 ```json
@@ -267,7 +272,7 @@
 ```
 > ##### This will change the title with the new one
 
-`GET https://api-user-forms.herokuapp.com/v1/users/6411da8bcfe3dbcddf3c8b20`:
+~~`GET https://api-user-forms.herokuapp.com/v1/users/6411da8bcfe3dbcddf3c8b20`:~~
 ```json
 //json response
 {
@@ -302,9 +307,13 @@
 }
 ```
 ---
-`DELETE https://api-user-forms.herokuapp.com/v1/forms/<id>`
+~~`DELETE https://api-user-forms.herokuapp.com/v1/forms/<id>`~~
 
 > ##### remove a form completely from database
 
 - example `DELETE https://api-user-forms.herokuapp.com/v1/forms/6411da8bcfe3dbcddf3c8b20`:
 > ##### this will remove the form with id `6411da8bcfe3dbcddf3c8b20`
+[ ! ] THE DOCUMENTATION BELOW IS DEPRECATED [ ! ]
+
+[ ! ] YOU CAN FIND THE UPDATED ONE [HERE](https://api-user-forms.herokuapp.com/) [ ! ]
+
