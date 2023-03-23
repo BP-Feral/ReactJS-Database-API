@@ -1,0 +1,120 @@
+.back {
+    background-color: #f6f6f6;
+}
+
+.button-list {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #070606;
+    box-shadow: 2px 4px 4px 0 rgba(0,0,0,.2);
+}
+
+.button {
+    width: 100%;
+    height: 54px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: #070606;
+    color: white;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.small-text {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.button.selected {
+    background-image: url("../button.png");
+    font-weight: 700;
+    color: #070606;
+}
+
+.button:hover {
+    background-image: url("../button.png");
+    font-weight: 700;
+    color: #070606;
+}
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    background-image: url("../navbar.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-left {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 40px;
+}
+
+.navbar-active {
+    background-color: #32CD32;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+    box-shadow: 0 0 5px #32CD32;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        box-shadow: 0 0 0 0 rgba(50, 205, 50, 0.4);
+    }
+    50% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(50, 205, 50, 0);
+    }
+    100% {
+        transform: scale(0.8);
+        box-shadow: 0 0 0 0 rgba(50, 205, 50, 0);
+    }
+}
+
+.content {
+    margin-left: 290px;
+    padding-top: 80px;
+    padding-left: 10px;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f6f6f6;
+}

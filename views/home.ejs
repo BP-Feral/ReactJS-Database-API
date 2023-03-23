@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <title>API Documentation</title>
+</head>
+
+<body class="back">
+    
+    <nav class="navbar">
+        <div class="navbar-left"><span style="color: rgb(36, 97, 187);">ASSIST Tech Challenge</span> - API Documentation</div>
+        <div class="navbar-right">
+            <div class="navbar-active"></div>
+            <div class="navbar-text">API Active</div>
+        </div>
+    </nav>
+    
+    <div class="button-list">
+        <button class="button" id="home-button">
+            <div>HOME</div>
+            <div><span class="small-text">Get started with the API here</span></div>
+        </button>
+        <button class="button" id="users-button">
+            <div>USERS</div>
+            <div><span class="small-text">localhost:3000/v1/users</span></div>
+        </button>
+        <button class="button" id="forms-button">
+            <div>FORMS</div>
+            <div><span class="small-text">localhost:3000/v1/forms</span></div>
+        </button>
+    </div>
+    
+    <div class="content" id="content">
+        <p>Home Content</p>
+        <p>Next line here wow</p>
+    </div>
+
+    <script>
+        const homeButton = document.getElementById("home-button");
+        const usersButton = document.getElementById("users-button");
+        const formsButton = document.getElementById("forms-button");
+        const content = document.getElementById("content");
+        homeButton.classList.add("selected");
+
+        function selectButton(button) {
+            homeButton.classList.remove("selected");
+            usersButton.classList.remove("selected");
+            formsButton.classList.remove("selected");
+
+            button.classList.add("selected");
+        }
+
+        homeButton.addEventListener("click", () => {
+            content.innerHTML = `
+            <p>Home Content</p>
+            <p>Next line here wow</p>
+            `;
+            selectButton(homeButton);
+        });
+
+        usersButton.addEventListener("click", () => {
+            content.innerHTML = `
+            <p>Users Content</p>
+            <p>Next line here wow</p>
+            `;
+            selectButton(usersButton);
+        });
+
+        formsButton.addEventListener("click", () => {
+            content.innerHTML = `
+            <p>Forms Content</p>
+            <p>Next line here wow</p>
+            `;
+            selectButton(formsButton);
+        });
+	</script>
+
+</body>
+</html>
